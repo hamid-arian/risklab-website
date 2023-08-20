@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import LogoDark from "public/images/logo-two.png";
-import LogoLight from "public/images/logo.png";
-import LogoTwoDark from "public/images/logo-three.png";
-import LogoTwoLight from "public/images/logo-four.png";
-import LogoThreeDark from "public/images/logo-light.png";
+import LogoDark from "public/images/logo.gif";
+import LogoLight from "public/images/logo.gif";
+import LogoTwoDark from "public/images/logo.gif";
+import LogoTwoLight from "public/images/logo.gif";
+import LogoThreeDark from "public/images/logo.gif";
 
 interface HeaderProps {
   openNav: boolean;
@@ -119,9 +119,12 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
           <div className="col-lg-12">
             <nav className="nav">
               <div className="nav__content">
-                <div className="nav__logo">
+                <div className="nav__logo" id="header_logo">
                   <Link href="/">
                     <Image src={logoSrc} priority alt="Logo" />
+                    <span className="logo_name">
+                      RiskLab<div>AI</div>
+                    </span>
                   </Link>
                 </div>
                 <div

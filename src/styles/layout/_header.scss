@@ -384,6 +384,48 @@
   }
 }
 
+#header_logo {
+  width: 100px;
+  height: 50px;
+}
+#header_logo > a {
+  display: flex;
+  align-items: center;
+}
+#header_logo img {
+  width: 100px !important;
+  height: 50px !important;
+}
+
+.header .logo_name {
+  color: black !important;
+}
+.header--dark .logo_name span,
+.header--dark .logo_name {
+  color: white !important;
+}
+.logo_name {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding-top: 8px;
+}
+.logo_name div {
+  font-size: 38px;
+  font-weight: 900 !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .logo_name {
+    font-size: 24px !important;
+    padding-top: 8px;
+  }
+  .logo_name div {
+    font-size: 26px !important;
+    font-weight: 900 !important;
+  }
+}
+
 /* ==== 
  --------- (4.1) header styles end ---------
  ==== */
