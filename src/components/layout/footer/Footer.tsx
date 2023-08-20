@@ -11,32 +11,87 @@ const Footer = () => {
     <footer className="footer section pb-0">
       <div className="container">
         <div className="row items-gap-two">
+          {/* researches */}
           <div className="col-12 col-sm-6 col-lg-3">
             <div
               className="footer__single"
               data-aos="fade-up"
               data-aos-duration="600"
             >
-              <h5 className="h5">our Products</h5>
+              <h5 className="h5">our Researches</h5>
               <ul>
                 <li>
-                  <Link href="/about-us"> AI Article Writer</Link>
+                  <Link href="/"> Data Analysis</Link>
                 </li>
                 <li>
-                  <Link href="/about-us"> Image background remover</Link>
+                  <Link href="/"> Feature Engineering</Link>
                 </li>
                 <li>
-                  <Link href="/about-us"> audio voice over AI</Link>
+                  <Link href="/"> Modeling</Link>
                 </li>
                 <li>
-                  <Link href="/about-us"> Text Summarizer AI</Link>
+                  <Link href="/"> Back-testing</Link>
                 </li>
                 <li>
-                  <Link href="/about-us">Art Generator</Link>
+                  <Link href="/"> Deep Learning</Link>
+                </li>
+                <li>
+                  <Link href="/"> Financial Derivatives</Link>
+                </li>
+                <li>
+                  <Link href="/"> Natural Language Processing</Link>
+                </li>
+                <li>
+                  <Link href="/"> Large Language Models</Link>
                 </li>
               </ul>
             </div>
           </div>
+          {/* latest news */}
+          <div className="col-12 col-sm-6 col-lg-3">
+            <div
+              className="footer__single"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="600"
+            >
+              <h5 className="h5">Latest News</h5>
+              <ul>
+                <li>
+                  <Link href="/about-us">RSE Computational Workshop</Link>
+                </li>
+                <li>
+                  <Link href="/about-us">RSE Computational Workshop</Link>
+                </li>
+                <li>
+                  <Link href="/about-us">RSE Computational Workshop</Link>
+                </li>
+                <li>
+                  <Link href="/use-case">RSE Computational Workshop</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* leadership */}
+          <div className="col-12 col-sm-6 col-lg-3">
+            <div
+              className="footer__single"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="600"
+            >
+              <h5 className="h5">Leadership</h5>
+              <ul>
+                <li>
+                  <Link href="/use-case"> Luis Seco</Link>
+                </li>
+                <li>
+                  <Link href="/use-case"> Hamid Arian</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* about */}
           <div className="col-12 col-sm-6 col-lg-3">
             <div
               className="footer__single"
@@ -44,7 +99,7 @@ const Footer = () => {
               data-aos-duration="600"
               data-aos-delay="200"
             >
-              <h5 className="h5">About tech AI</h5>
+              <h5 className="h5">About RiskLabAI</h5>
               <ul>
                 <li>
                   <Link href="/about-us">About</Link>
@@ -53,72 +108,13 @@ const Footer = () => {
                   <Link href="/blog">Blog</Link>
                 </li>
                 <li>
-                  <Link href="/sign-in">Sign in</Link>
-                </li>
-                <li>
-                  <Link href="/register">Register</Link>
-                </li>
-                <li>
                   <Link href="/contact-us">Contact</Link>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-lg-3">
-            <div
-              className="footer__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="600"
-            >
-              <h5 className="h5">Use Cases</h5>
-              <ul>
-                <li>
-                  <Link href="/use-case"> AI Voiceover for Videos</Link>
-                </li>
-                <li>
-                  <Link href="/use-case">E- Learning</Link>
-                </li>
-                <li>
-                  <Link href="/use-case"> All interactive Voice</Link>
-                </li>
-                <li>
-                  <Link href="/use-case"> Auto Accessibility</Link>
-                </li>
-                <li>
-                  <Link href="/use-case">YouTube Videos</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-lg-3">
-            <div
-              className="footer__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="600"
-            >
-              <h5 className="h5">support</h5>
-              <ul>
-                <li>
-                  <Link href="/about-us">Privacy Policy</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">Terms of Service</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">Cookie Policy</Link>
-                </li>
-                <li>
-                  <Link href="/use-case">FAQ</Link>
-                </li>
-                <li>
-                  <Link href="/contact-us">Helpdesk</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
+        {/* footer bottom section */}
         <div className="row">
           <div className="col-12">
             <div className="copyright-inner">
