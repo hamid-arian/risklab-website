@@ -140,8 +140,7 @@ const Footer = () => {
                   <p className="text-center">
                     Copyright &copy;
                     <span id="copyYear"> {currentYear} </span>
-                    <Link href="/"> techAI </Link>. Designed By{" "}
-                    <Link href="/(autho-url)"> HugeBinary </Link>
+                    <Link href="/"> RiskLabAI </Link>.
                   </p>
                 </div>
                 <div className="col-12 col-lg-3">

@@ -199,7 +199,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                           <li>
                             <Link
                               className="nav__dropdown-item hide-nav"
-                              href="/index-two"
+                              href="/"
                             >
                               Feature Engineering
                             </Link>
@@ -207,7 +207,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                           <li>
                             <Link
                               className="nav__dropdown-item hide-nav"
-                              href="/index-three"
+                              href="/"
                             >
                               Modeling
                             </Link>
@@ -215,7 +215,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                           <li>
                             <Link
                               className="nav__dropdown-item hide-nav"
-                              href="/index-light"
+                              href="/"
                             >
                               Back-testing
                             </Link>
@@ -223,7 +223,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                           <li>
                             <Link
                               className="nav__dropdown-item hide-nav"
-                              href="/index-two-light"
+                              href="/"
                             >
                               Deep Learning
                             </Link>
@@ -231,7 +231,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                           <li>
                             <Link
                               className="nav__dropdown-item hide-nav"
-                              href="/index-three-light"
+                              href="/"
                             >
                               Financial Derivatives
                             </Link>
@@ -239,7 +239,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                           <li>
                             <Link
                               className="nav__dropdown-item hide-nav"
-                              href="/index-three-light"
+                              href="/"
                             >
                               Natural Language Processing
                             </Link>
@@ -247,7 +247,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                           <li>
                             <Link
                               className="nav__dropdown-item hide-nav"
-                              href="/index-three-light"
+                              href="/"
                             >
                               Large Language Models
                             </Link>
