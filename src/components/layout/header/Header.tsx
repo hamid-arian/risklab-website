@@ -148,11 +148,13 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                     </button>
                   </div>
                   <ul className="nav__menu-items">
+                    {/* home */}
                     <li className="nav__menu-item nav__menu-item--dropdown">
                       <Link href="/" className="nav__menu-link hide-nav">
                         Home
                       </Link>
                     </li>
+                    {/* about */}
                     <li className="nav__menu-item">
                       <Link
                         href="/about-us"
@@ -161,14 +163,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         About
                       </Link>
                     </li>
-                    <li className="nav__menu-item">
-                      <Link
-                        href="/research"
-                        className="nav__menu-link hide-nav"
-                      >
-                        Research
-                      </Link>
-                    </li>
+                    {/* contact us */}
                     <li className="nav__menu-item">
                       <Link
                         href="/contact-us"
@@ -177,19 +172,19 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         Contact Us
                       </Link>
                     </li>
-
+                    {/* research */}
                     <li className="nav__menu-item nav__menu-item--dropdown">
                       <a
                         className={`nav__menu-link nav__menu-link--dropdown ${isSubMenuButton(
-                          "home"
+                          "research"
                         )}`}
-                        onClick={() => handleSubmenu("projects")}
+                        onClick={() => handleSubmenu("research")}
                       >
-                        Projects
+                        Research
                       </a>
                       <div
                         className={`nav__dropdown nav__dropdown--alt ${isSubMenuOpen(
-                          "projects"
+                          "research"
                         )}`}
                       >
                         <ul>
