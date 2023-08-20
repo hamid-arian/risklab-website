@@ -52,7 +52,7 @@
     .nav__dropdown {
       position: absolute;
       top: 100%;
-      left: 0px;
+      left: -150px;
       min-width: 200px;
       max-width: 300px;
       background-color: $white;
@@ -63,7 +63,7 @@
       transition: $transition;
       transform: translateY(30px);
       box-shadow: $shadow;
-      max-height: 320px;
+      max-height: 400px;
       overflow-y: auto;
       pointer-events: none;
 
@@ -129,15 +129,14 @@
   }
 
   .nav__dropdown--alt {
-    max-width: 600px !important;
-    min-width: 400px !important;
+    max-width: 500px !important;
+    min-width: 300px !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0px;
     width: 100%;
     ul {
-      width: calc(50% - 12px);
       &:nth-of-type(1) {
         margin-right: 24px;
       }

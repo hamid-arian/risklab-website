@@ -214,13 +214,9 @@
         opacity: 1;
         visibility: visible;
         min-width: 100%;
-        max-height: 305px;
+        max-height: 400px;
         background-color: $white;
         box-shadow: $shadow;
-
-        li {
-          margin-bottom: 14px;
-        }
       }
 
       .nav__dropdown-item {
