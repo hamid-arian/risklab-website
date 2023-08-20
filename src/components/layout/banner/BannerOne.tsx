@@ -11,16 +11,18 @@ const BannerOne = () => {
           <div className="col-12 col-md-10 col-lg-6">
             <div className="banner-one__content">
               <p className="h6">
-                <span>AI Voice</span>
-                Generator and Text to Speech
+                <span>AI</span>
+                Toward Reproducible Research
               </p>
-              <h1 className="h1">Your Complete Generative Voice AI Toolkit</h1>
+              <h1 className="h1">
+                High-Performance Cutting-Edge Financial Intelligence
+              </h1>
               <div className="section__content-cta">
                 <Link href="/register" className="btn btn--primary">
-                  start free now
+                  Open-source Solutions
                 </Link>
                 <Link href="/contact-us" className="btn btn--secondary">
-                  request A Demo
+                  Request Consulting
                 </Link>
               </div>
             </div>
