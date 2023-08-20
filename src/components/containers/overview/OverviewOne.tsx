@@ -1,9 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import One from "public/images/icons/overview-one.png";
-import Two from "public/images/icons/overview-two.png";
-import Three from "public/images/icons/overview-three.png";
-import Four from "public/images/icons/overview-four.png";
 
 import NeuralNetworks from "../../../../public/images/neural_networks.png";
 import BackTesting from "../../../../public/images/back_testing.png";

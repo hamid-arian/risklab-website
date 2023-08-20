@@ -546,6 +546,12 @@
 }
 
 @media only screen and (max-width: 991.98px) {
+  .swiper-slide,
+  .case__slider-single {
+    max-width: 290px !important;
+    max-height: 290px !important;
+    min-height: 290px !important;
+  }
   // heading styles
   h1,
   .h1 {
@@ -785,7 +791,8 @@
 
   .case-sec {
     .case__slider-single {
-      max-width: 290px;
+      max-width: 290px !important;
+      max-height: 290px !important;
     }
 
     .swiper-slide {

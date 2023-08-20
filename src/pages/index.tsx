@@ -17,16 +17,16 @@ const Home = () => {
     <Layout header={true} footer={1}>
       <BannerOne />
       <OverviewOne />
-      <VoiceSlider />
+      {/* <VoiceSlider /> */}
       <Clone />
       <Sponsor />
       <Tour />
       <UseCaseSlider />
-      <Broadcast />
+      {/* <Broadcast />
       <Faq />
       <LanguageSlider />
       <TestimonialOne />
-      <CtaOne />
+      <CtaOne /> */}
     </Layout>
   );
 };
