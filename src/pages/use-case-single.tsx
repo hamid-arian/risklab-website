@@ -9,7 +9,7 @@ import CtaAbout from "@/components/containers/cta/CtaAbout";
 
 const UseCaseSingle = () => {
   return (
-    <Layout header={true} footer={2}>
+    <Layout header={true} footer={1}>
       <Banner desc="Website Copy & SEO" page="Use Case" />
       <UseCaseAbout />
       <BroadcastLight />

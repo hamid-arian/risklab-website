@@ -13,7 +13,7 @@ import Tools from "@/components/containers/tools/Tools";
 
 const HomeTwoLight = () => {
   return (
-    <Layout header={true} footer={4}>
+    <Layout header={true} footer={1}>
       <BannerTwo />
       <TeamOne />
       <GenerateTwo />

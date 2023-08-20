@@ -5,7 +5,7 @@ import RegisterAccount from "@/components/containers/authentication/RegisterAcco
 
 const Register = () => {
   return (
-    <Layout header={true} footer={2}>
+    <Layout header={true} footer={1}>
       <Banner desc="Create Account" page="Create Account" />
       <RegisterAccount />
     </Layout>

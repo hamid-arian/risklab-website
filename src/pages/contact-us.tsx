@@ -6,7 +6,7 @@ import CtaBlack from "@/components/containers/cta/CtaBlack";
 
 const ContactUs = () => {
   return (
-    <Layout header={true} footer={2}>
+    <Layout header={true} footer={1}>
       <Banner desc="Contact Us" page="Contact Us" />
       <ContactMain />
       <CtaBlack />

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AnimeOne from "public/images/footer-anime-one.png";
 import AnimeTwo from "public/images/footer-anime-two.png";
-import LogoTwo from "public/images/logo-two.png";
+import LogoTwo from "public/images/logo.gif";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -124,9 +124,15 @@ const Footer = () => {
             <div className="copyright-inner">
               <div className="row items-gap align-items-center">
                 <div className="col-12 col-lg-3">
-                  <div className="logo text-center text-lg-start">
+                  <div
+                    className="logo text-center text-lg-start"
+                    id="footer_logo"
+                  >
                     <Link href="/">
                       <Image src={LogoTwo} alt="Image" />
+                      <span className="logo_name">
+                        RiskLab<div>AI</div>
+                      </span>
                     </Link>
                   </div>
                 </div>

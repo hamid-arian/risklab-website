@@ -6,7 +6,7 @@ import CtaAbout from "@/components/containers/cta/CtaAbout";
 
 const Teams = () => {
   return (
-    <Layout header={true} footer={2}>
+    <Layout header={true} footer={1}>
       <Banner desc="Our Teams" page="Our Teams" />
       <TeamMain />
       <CtaAbout />

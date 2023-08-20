@@ -12,7 +12,7 @@ import CtaThree from "@/components/containers/cta/CtaThree";
 
 const HomeThreeLight = () => {
   return (
-    <Layout header={true} footer={6}>
+    <Layout header={true} footer={1}>
       <BannerThree />
       <RemoveBg />
       <Workflow />
