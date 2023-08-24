@@ -15,6 +15,7 @@ const Broadcast = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 fix-scroll">
+            {/* library */}
             <div className="broadcast__inner">
               <div className="row align-items-center items-gap-two">
                 <div className="col-12 col-xl-8 col-xxl-7">
@@ -63,6 +64,7 @@ const Broadcast = () => {
                 />
               </div>
             </div>
+            {/* researches */}
             <div className="broadcast__inner">
               <div className="row align-items-center items-gap-two">
                 <div className="col-12 col-xl-4 col-xxl-5">
