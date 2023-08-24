@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import Layout from "@/components/layout/Layout";
 import Banner from "../../components/layout/banner/Banner";
 import ResearchCard from "@/components/research_card";
+import RESEARCHES from "@/data/researches.json";
 
 const Researches = () => {
   const [imgTab, setImgTab] = useState(0);
@@ -22,9 +23,15 @@ const Researches = () => {
       <div className="row justify-content-center">
         <div className="col-12 col-xl-10">
           <div className="accordion" id="accordion">
-            <ResearchCard imgTab={imgTab} setImgTab={setImgTab} />
-            <ResearchCard imgTab={imgTab} setImgTab={setImgTab} />
-            <ResearchCard imgTab={imgTab} setImgTab={setImgTab} />
+            {RESEARCHES?.map((research, index): any => (
+              <Fragment key={index}>
+                <ResearchCard
+                  research={research}
+                  imgTab={imgTab}
+                  setImgTab={setImgTab}
+                />
+              </Fragment>
+            ))}
           </div>
         </div>
       </div>
