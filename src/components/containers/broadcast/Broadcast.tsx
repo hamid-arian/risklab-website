@@ -72,19 +72,16 @@ const Broadcast = () => {
                 </div>
                 <div className="col-12 col-xl-8 col-xxl-7">
                   <div className="section__content broadcast__inner-content">
-                    <h2 className="h2">Team Access for Collaboration</h2>
+                    <h2 className="h2">Research Focus</h2>
                     <div className="paragraph">
                       <p>
-                        Your text to speech synthesized audio files are securely
-                        stored in the cloud. You can also create drafts and
-                        convert the text to audio at a later time. Clear,
-                        consistent, and professional voices for marketing,
-                        explainer, product, and YouTube videos.
+                        Our research has led to groundbreaking insights in the
+                        field of quantitative finance.
                       </p>
                     </div>
                     <div className="section__content-cta">
-                      <Link href="/register" className="btn btn--secondary">
-                        sign up now
+                      <Link href="/researches" className="btn btn--secondary">
+                        See Our Researches
                       </Link>
                     </div>
                   </div>
