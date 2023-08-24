@@ -81,6 +81,10 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
       logoSrc = LogoDark;
       logoSrcMobile = LogoDark;
       return "header--dark";
+    } else if (pathname === "/library") {
+      logoSrc = LogoDark;
+      logoSrcMobile = LogoDark;
+      return "header--dark";
     } else if (pathname === "/index-light") {
       logoSrc = LogoLight;
       logoSrcMobile = LogoLight;

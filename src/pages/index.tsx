@@ -25,7 +25,7 @@ const Home = () => {
       <Broadcast />
       {/* <Faq /> */}
       {/* <LanguageSlider /> */}
-      <TestimonialOne />
+      {/* <TestimonialOne /> */}
       {/* <CtaOne /> */}
     </Layout>
   );

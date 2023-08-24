@@ -23,6 +23,8 @@ const Layout = ({ children, header, footer }: layoutProps) => {
 
   if (router.pathname === "/") {
     additionalClasses = " home-dark";
+  } else if (router.pathname === "/library") {
+    additionalClasses = " home-dark";
   } else if (router.pathname === "/index-light") {
     additionalClasses = " home-light";
   } else if (router.pathname === "/index-two") {
@@ -63,11 +65,6 @@ const Layout = ({ children, header, footer }: layoutProps) => {
         )}
         <main>{children}</main>
         {footer === 1 && <Footer />}
-        {footer === 2 && <FooterLight />}
-        {footer === 3 && <FooterTwo />}
-        {footer === 4 && <FooterTwoLight />}
-        {footer === 5 && <FooterThree />}
-        {footer === 6 && <FooterThreeLight />}
         <ScrollProgress />
       </div>
     </Fragment>

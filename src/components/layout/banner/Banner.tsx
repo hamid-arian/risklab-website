@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import AnimeOne from "public/images/anime-one.png";
 import AnimeTwo from "public/images/anime-two.png";
+import { title } from "process";
 
-const Banner = ({ desc, page }: any) => {
+const Banner = ({ title }: any) => {
   return (
     <section className="section cmn-banner">
       <div className="container">
@@ -15,17 +15,7 @@ const Banner = ({ desc, page }: any) => {
               data-aos="fade-up"
               data-aos-duration="600"
             >
-              <h3 className="h3">{desc}</h3>
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb justify-content-center">
-                  <li className="breadcrumb-item">
-                    <Link href="/">Home</Link>
-                  </li>
-                  <li className="breadcrumb-item active" aria-current="page">
-                    {page}
-                  </li>
-                </ol>
-              </nav>
+              <h3 className="h3">{title}</h3>
             </div>
           </div>
         </div>
