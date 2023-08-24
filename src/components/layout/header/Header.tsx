@@ -180,7 +180,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         )}`}
                         onClick={() => handleSubmenu("research")}
                       >
-                        Research
+                        Researches
                       </a>
                       <div
                         className={`nav__dropdown nav__dropdown--alt ${isSubMenuOpen(

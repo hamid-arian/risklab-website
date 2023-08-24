@@ -464,7 +464,6 @@
     }
   }
   .case__slider-single {
-    background-image: url(../../../public/images/avatar.jpeg);
     background-size: cover;
     padding: 0px 25px;
     border: 1px solid #44567c;
@@ -575,6 +574,16 @@
         }
       }
     }
+  }
+  .case__slider_single_background_image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 20px;
   }
 
   .case-one-in {

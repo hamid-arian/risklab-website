@@ -1,5 +1,7 @@
 import React from "react";
-import Link from "next/link";
+import Image from "next/image";
+import HamidArianAvatar from "../../../../public/images/hamid_arian.png";
+import LuisSecoAvatar from "../../../../public/images/luis_seco.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
@@ -57,6 +59,11 @@ const UseCaseSlider = () => {
               >
                 <SwiperSlide>
                   <div className="case__slider-single case-one-in">
+                    <Image
+                      className="case__slider_single_background_image"
+                      src={LuisSecoAvatar}
+                      alt="Luis Seco"
+                    />
                     {/* <div className="thumb">
                       <i className="tech-camera"></i>
                     </div> */}
@@ -72,6 +79,11 @@ const UseCaseSlider = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="case__slider-single case-one-in">
+                    <Image
+                      className="case__slider_single_background_image"
+                      src={HamidArianAvatar}
+                      alt="Hamid Arian"
+                    />
                     {/* <div className="thumb">
                       <i className="tech-camera"></i>
                     </div> */}

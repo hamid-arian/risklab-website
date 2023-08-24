@@ -22,11 +22,11 @@ const Home = () => {
       <Sponsor />
       <Tour />
       <UseCaseSlider />
-      {/* <Broadcast />
-      <Faq />
-      <LanguageSlider />
+      <Broadcast />
+      {/* <Faq /> */}
+      {/* <LanguageSlider /> */}
       <TestimonialOne />
-      <CtaOne /> */}
+      {/* <CtaOne /> */}
     </Layout>
   );
 };
