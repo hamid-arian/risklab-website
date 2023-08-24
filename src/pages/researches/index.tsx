@@ -9,8 +9,8 @@ const Researches = () => {
         <Banner title={"Researches"} />
         <div className="library_description">
           <h6 data-aos="fade-up" data-aos-duration="600">
-            At RiskLab AI, we combine powerful programming languages to bring
-            our research to life.
+            Our research has led to groundbreaking insights in the field of
+            quantitative finance.
           </h6>
         </div>
       </section>
