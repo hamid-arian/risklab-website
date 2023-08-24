@@ -1,5 +1,3 @@
-import "./research_card.scss";
-
 const ResearchCard = ({ imgTab, setImgTab }: any) => {
   return (
     <div

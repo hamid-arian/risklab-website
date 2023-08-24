@@ -1,7 +1,11 @@
+import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import Banner from "../../components/layout/banner/Banner";
+import ResearchCard from "@/components/research_card";
 
 const Researches = () => {
+  const [imgTab, setImgTab] = useState(0);
+
   return (
     <Layout header={true} footer={1}>
       {/* banner section */}
@@ -15,7 +19,15 @@ const Researches = () => {
         </div>
       </section>
       {/* researches list */}
-      <section></section>
+      <div className="row justify-content-center">
+        <div className="col-12 col-xl-10">
+          <div className="accordion" id="accordion">
+            <ResearchCard imgTab={imgTab} setImgTab={setImgTab} />
+            <ResearchCard imgTab={imgTab} setImgTab={setImgTab} />
+            <ResearchCard imgTab={imgTab} setImgTab={setImgTab} />
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };
