@@ -704,7 +704,7 @@
 
       &::after {
         color: $quinary-color;
-        content: "\f068";
+        content: "";
         font-family: "Font Awesome 6 Free";
       }
     }
@@ -718,7 +718,7 @@
       background-color: transparent;
 
       &::after {
-        content: "\2b";
+        content: "";
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
         background-image: none;
@@ -756,9 +756,12 @@
     border-top: 0px solid transparent;
 
     p {
-      color: $white;
+      color: $black;
       text-transform: capitalize;
       max-width: 1200px;
+      a {
+        color: $primary-color !important;
+      }
     }
   }
 }

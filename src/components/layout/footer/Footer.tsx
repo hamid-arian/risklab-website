@@ -60,7 +60,7 @@ const Footer = () => {
               <ul>
                 {NEWS.map((item, index) => (
                   <li>
-                    <Link key={index} href={`/news/${item.id}`}>
+                    <Link key={index} href="/news">
                       {item.title}
                     </Link>
                   </li>
