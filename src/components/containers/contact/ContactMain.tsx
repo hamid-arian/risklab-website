@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import Arrow from "public/images/arrow-contact.png";
+// import Image from "next/image";
+// import Link from "next/link";
+// import Arrow from "public/images/arrow-contact.png";
 
 const ContactMain = () => {
   return (
@@ -52,7 +52,7 @@ const ContactMain = () => {
                 >
                   <input
                     type="text"
-                    name="contact-name"
+                    name="contactName"
                     id="contactName"
                     placeholder="enter full name"
                   />
@@ -64,7 +64,7 @@ const ContactMain = () => {
                 >
                   <input
                     type="email"
-                    name="contact-email"
+                    name="contactEmail"
                     id="contactEmail"
                     placeholder="enter Your Email"
                   />
@@ -74,15 +74,12 @@ const ContactMain = () => {
                   data-aos="fade-up"
                   data-aos-duration="600"
                 >
-                  <select className="subject">
-                    <option data-display="Select Subject">
-                      Select Subject
-                    </option>
-                    <option value="1">Account</option>
-                    <option value="2">Service</option>
-                    <option value="3">Pricing</option>
-                    <option value="4">Support</option>
-                  </select>
+                  <input
+                    type="email"
+                    name="contactSubject"
+                    id="contactSubject"
+                    placeholder="enter a subject"
+                  />
                 </div>
                 <div
                   className="group-input"
@@ -90,13 +87,16 @@ const ContactMain = () => {
                   data-aos-duration="600"
                 >
                   <textarea
-                    name="contact-message"
+                    name="contactMessage"
                     id="contactMessage"
                     placeholder="Write a message"
                   ></textarea>
                 </div>
                 <div className="form-cta justify-content-start">
-                  <button type="submit" className="btn btn--nonary">
+                  <button
+                    type="submit"
+                    className="w-100 btn btn--nonary d-flex justify-content-center"
+                  >
                     Send
                     <i className="fa-solid fa-paper-plane"></i>
                   </button>
