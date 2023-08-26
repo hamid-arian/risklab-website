@@ -1,7 +1,10 @@
 import React from "react";
 import Layout from "@/components/layout/Layout";
-import BannerOne from "@/components/layout/banner/BannerOne";
+import BannerOnelight from "@/components/layout/banner/BannerOnelight";
 import OverviewOne from "@/components/containers/overview/OverviewOne";
+import CloneLight from "@/components/containers/clone/CloneLight";
+
+import BannerOne from "@/components/layout/banner/BannerOne";
 import VoiceSlider from "@/components/containers/voice/VoiceSlider";
 import Clone from "@/components/containers/clone/Clone";
 import Sponsor from "@/components/containers/sponsor/Sponsor";
@@ -15,18 +18,13 @@ import LanguageSlider from "@/components/containers/language/LanguageSlider";
 const Home = () => {
   return (
     <Layout header={true} footer={1}>
-      <BannerOne />
+      <BannerOnelight />
       <OverviewOne />
-      {/* <VoiceSlider /> */}
-      <Clone />
+      <CloneLight />
       <Sponsor />
       <Tour />
       <UseCaseSlider />
       <Broadcast />
-      {/* <Faq /> */}
-      {/* <LanguageSlider /> */}
-      {/* <TestimonialOne /> */}
-      {/* <CtaOne /> */}
     </Layout>
   );
 };

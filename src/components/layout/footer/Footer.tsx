@@ -126,9 +126,7 @@ const Footer = () => {
                   >
                     <Link href="/">
                       <Image src={LogoTwo} alt="Image" />
-                      <span className="logo_name">
-                        RiskLab<div>AI</div>
-                      </span>
+                      <span className="logo_name">RiskLabAI</span>
                     </Link>
                   </div>
                 </div>

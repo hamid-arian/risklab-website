@@ -75,7 +75,7 @@ const CloneLight = () => {
                   Localize
                 </li>
               </ul>
-              <div
+              {/* <div
                 className="section__content-cta"
                 data-aos="fade-up"
                 data-aos-duration="600"
@@ -86,7 +86,7 @@ const CloneLight = () => {
                 <Link href="/about-us" className="btn btn--quaternary">
                   About Us
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

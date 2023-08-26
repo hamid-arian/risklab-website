@@ -22,7 +22,7 @@ const Layout = ({ children, header, footer }: layoutProps) => {
   let additionalClasses = " ";
 
   if (router.pathname === "/") {
-    additionalClasses = " home-dark";
+    additionalClasses = " home-light";
   } else if (router.pathname === "/library") {
     additionalClasses = " home-dark";
   } else if (router.pathname === "/researches") {

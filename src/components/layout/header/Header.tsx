@@ -80,7 +80,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
     if (pathname === "/") {
       logoSrc = LogoDark;
       logoSrcMobile = LogoDark;
-      return "header--dark";
+      return "header";
     } else if (pathname === "/library") {
       logoSrc = LogoDark;
       logoSrcMobile = LogoDark;
@@ -130,9 +130,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                 <div className="nav__logo" id="header_logo">
                   <Link href="/">
                     <Image src={logoSrc} priority alt="Logo" />
-                    <span className="logo_name">
-                      RiskLab<div>AI</div>
-                    </span>
+                    <span className="logo_name">RiskLabAI</span>
                   </Link>
                 </div>
                 <div
@@ -143,9 +141,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                   <div className="nav__menu-logo d-flex d-xl-none">
                     <Link href="/" className="text-center hide-nav">
                       <Image src={logoSrcMobile} priority alt="Logo" />
-                      <span className="logo_name">
-                        RiskLab<div>AI</div>
-                      </span>
+                      <span className="logo_name">RiskLabAI</span>
                     </Link>
                     <button
                       aria-label="close the menu"

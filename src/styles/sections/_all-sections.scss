@@ -3451,13 +3451,14 @@
 .home-light {
   .banner-one {
     background-color: $white;
-    background-size: contain;
-    background-position: left top 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top 0px;
 
     .h1,
     .h6,
     p {
-      color: $theme-color;
+      color: $white;
     }
 
     .h6 {
@@ -3549,7 +3550,7 @@
     .content {
       .h5,
       p {
-        color: $theme-color;
+        color: $white;
       }
 
       a {

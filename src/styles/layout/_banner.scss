@@ -4,8 +4,10 @@
 
 // banner one
 .banner-one {
-  padding: 226px 0px 184px;
-  background-image: url("../../../public/images/banner/banner-one-bg.png");
+  padding: 130px 0px 20px;
+  margin-bottom: 100px;
+  // background-image: url("../../../public/images/banner/banner-one-bg.png");
+  background-image: url("../../../public/images/toronto.jpg");
 
   .banner-one__content {
     .h6 {
@@ -39,7 +41,14 @@
 }
 
 .banner-one-alter {
-  background-image: url("../../../public/images/banner/banner-one-bg-light.png");
+  // border: 10px solid red !important;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("../../../public/images/toronto.jpg");
+  background-size: cover;
 }
 
 // banner two
