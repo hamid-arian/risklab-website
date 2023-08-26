@@ -7,22 +7,21 @@ const ContactMain = () => {
   return (
     <section className="section contact-main">
       <div className="container">
-        <div className="row items-gap align-items-center">
-          <div className="col-12 col-lg-6 col-xxl-5">
+        <div className="row items-gap flex-column align-items-center">
+          <div className="col-12 col-lg-6 col-xxl-6">
             <div
-              className="contact-main__content"
+              className="contact-main__content w-100"
               data-aos="fade-up"
               data-aos-duration="600"
             >
-              <h2 className="h3">
-                Have something in mind?
-                <span>Let&apos;s talk.</span>
+              <h2 className="h3 text-center">
+                <span>Let&apos;s talk</span>
               </h2>
-              <p>
-                Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim.
+              <p className="w-100 text-center">
+                Fill out the contact form below, and our team will respond to
+                your query as soon as possible.
               </p>
-              <div className="arrow">
+              {/* <div className="arrow">
                 <Image src={Arrow} alt="Image" />
               </div>
               <div className="cta-contact">
@@ -35,10 +34,10 @@ const ContactMain = () => {
                   Request a feature
                   <i className="fa-solid fa-angle-right"> </i>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="col-12 col-lg-6 col-xxl-6 offset-xxl-1">
+          <div className="col-12 col-lg-6 col-xxl-6">
             <div
               className="contact-main__form"
               data-aos="fade-up"
@@ -96,19 +95,9 @@ const ContactMain = () => {
                     placeholder="Write a message"
                   ></textarea>
                 </div>
-                <div className="group-radio">
-                  <input
-                    type="checkbox"
-                    name="contact-check"
-                    id="contactCheck"
-                  />
-                  <label htmlFor="contactCheck">
-                    I accept your terms & conditions
-                  </label>
-                </div>
                 <div className="form-cta justify-content-start">
                   <button type="submit" className="btn btn--nonary">
-                    Send Message
+                    Send
                     <i className="fa-solid fa-paper-plane"></i>
                   </button>
                 </div>

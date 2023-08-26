@@ -158,6 +158,12 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         Home
                       </Link>
                     </li>
+                    {/* news */}
+                    <li className="nav__menu-item">
+                      <Link href="/news" className="nav__menu-link hide-nav">
+                        News
+                      </Link>
+                    </li>
                     {/* about */}
                     <li className="nav__menu-item">
                       <Link
