@@ -14,7 +14,7 @@ const Tour = () => {
               data-aos="fade-up"
               data-aos-duration="600"
             >
-              <h2 className="h2">Take a quick tour of techAI</h2>
+              <h2 className="h2">Take a quick tour of RiskLabAI</h2>
               <p className="max-5">
                 Watch this video to learn all about our AI voice technology and
                 how to use it in your products
@@ -35,7 +35,7 @@ const Tour = () => {
             </div>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-12">
             <div
               className="tour__content-cta"
@@ -60,7 +60,7 @@ const Tour = () => {
               <Image src={Frame} alt="Image" priority className="frame" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

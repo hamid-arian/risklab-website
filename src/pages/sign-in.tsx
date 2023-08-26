@@ -5,7 +5,7 @@ import SignInAccount from "@/components/containers/authentication/SignInAccount"
 
 const SignIn = () => {
   return (
-    <Layout header={true} footer={2}>
+    <Layout header={true} footer={1}>
       <Banner desc="Sign In" page="Sign In" />
       <SignInAccount />
     </Layout>

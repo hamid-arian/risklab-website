@@ -5,7 +5,7 @@ import BlogDetails from "@/components/containers/blog/BlogDetails";
 
 const BlogSingle = () => {
   return (
-    <Layout header={true} footer={2}>
+    <Layout header={true} footer={1}>
       <Banner
         desc="There are many variations of passages of Lorem Ipsum"
         page="Blog Details"

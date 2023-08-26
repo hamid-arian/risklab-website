@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import LogoDark from "public/images/logo-two.png";
-import LogoLight from "public/images/logo.png";
-import LogoTwoDark from "public/images/logo-three.png";
-import LogoTwoLight from "public/images/logo-four.png";
-import LogoThreeDark from "public/images/logo-light.png";
+import LogoDark from "public/images/logo.gif";
+import LogoLight from "public/images/logo.gif";
+import LogoTwoDark from "public/images/logo.gif";
+import LogoTwoLight from "public/images/logo.gif";
+import LogoThreeDark from "public/images/logo.gif";
 
 interface HeaderProps {
   openNav: boolean;
@@ -80,6 +80,14 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
     if (pathname === "/") {
       logoSrc = LogoDark;
       logoSrcMobile = LogoDark;
+      return "header";
+    } else if (pathname === "/library") {
+      logoSrc = LogoDark;
+      logoSrcMobile = LogoDark;
+      return "header--dark";
+    } else if (pathname === "/researches") {
+      logoSrc = LogoDark;
+      logoSrcMobile = LogoDark;
       return "header--dark";
     } else if (pathname === "/index-light") {
       logoSrc = LogoLight;
@@ -119,9 +127,10 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
           <div className="col-lg-12">
             <nav className="nav">
               <div className="nav__content">
-                <div className="nav__logo">
+                <div className="nav__logo" id="header_logo">
                   <Link href="/">
                     <Image src={logoSrc} priority alt="Logo" />
+                    <span className="logo_name">RiskLabAI</span>
                   </Link>
                 </div>
                 <div
@@ -132,6 +141,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                   <div className="nav__menu-logo d-flex d-xl-none">
                     <Link href="/" className="text-center hide-nav">
                       <Image src={logoSrcMobile} priority alt="Logo" />
+                      <span className="logo_name">RiskLabAI</span>
                     </Link>
                     <button
                       aria-label="close the menu"
@@ -142,206 +152,28 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                     </button>
                   </div>
                   <ul className="nav__menu-items">
+                    {/* home */}
                     <li className="nav__menu-item nav__menu-item--dropdown">
-                      <a
-                        className={`nav__menu-link nav__menu-link--dropdown ${isSubMenuButton(
-                          "home"
-                        )}`}
-                        onClick={() => handleSubmenu("home")}
-                      >
+                      <Link href="/" className="nav__menu-link hide-nav">
                         Home
-                      </a>
-                      <div
-                        className={`nav__dropdown nav__dropdown--alt ${isSubMenuOpen(
-                          "home"
-                        )}`}
-                      >
-                        <ul>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Home 01
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/index-two"
-                            >
-                              Home 02
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/index-three"
-                            >
-                              Home 03
-                            </Link>
-                          </li>
-                        </ul>
-                        <ul>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/index-light"
-                            >
-                              Home 01 Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/index-two-light"
-                            >
-                              Home 02 Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/index-three-light"
-                            >
-                              Home 03 Light
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
+                      </Link>
                     </li>
+                    {/* news */}
+                    <li className="nav__menu-item">
+                      <Link href="/news" className="nav__menu-link hide-nav">
+                        News
+                      </Link>
+                    </li>
+                    {/* about */}
                     <li className="nav__menu-item">
                       <Link
                         href="/about-us"
                         className="nav__menu-link hide-nav"
                       >
-                        About Us
+                        About
                       </Link>
                     </li>
-                    <li className="nav__menu-item nav__menu-item--dropdown">
-                      <a
-                        className={`nav__menu-link nav__menu-link--dropdown ${isSubMenuButton(
-                          "case"
-                        )}`}
-                        onClick={() => handleSubmenu("case")}
-                      >
-                        Use Case
-                      </a>
-                      <ul className={`nav__dropdown ${isSubMenuOpen("case")}`}>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/use-case"
-                          >
-                            Use Case
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/use-case-single"
-                          >
-                            Use Case Details
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="nav__menu-item nav__menu-item--dropdown">
-                      <a
-                        className={`nav__menu-link nav__menu-link--dropdown ${isSubMenuButton(
-                          "pages"
-                        )}`}
-                        onClick={() => handleSubmenu("pages")}
-                      >
-                        Pages
-                      </a>
-                      <ul className={`nav__dropdown ${isSubMenuOpen("pages")}`}>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/error"
-                          >
-                            Error
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/register"
-                          >
-                            Sign Up
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/sign-in"
-                          >
-                            Sign In
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/teams"
-                          >
-                            Our Teams
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/about-us"
-                          >
-                            About Us
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/contact-us"
-                          >
-                            Contact Us
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="nav__menu-item nav__menu-item--dropdown">
-                      <a
-                        className={`nav__menu-link nav__menu-link--dropdown ${isSubMenuButton(
-                          "blog"
-                        )}`}
-                        onClick={() => handleSubmenu("blog")}
-                      >
-                        Blog
-                      </a>
-                      <ul className={`nav__dropdown ${isSubMenuOpen("blog")}`}>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/blog"
-                          >
-                            Blog Layout One
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/blog-two"
-                          >
-                            Blog Layout Two
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="nav__dropdown-item hide-nav"
-                            href="/blog-single"
-                          >
-                            Blog Single
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
+                    {/* contact us */}
                     <li className="nav__menu-item">
                       <Link
                         href="/contact-us"
@@ -350,10 +182,88 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         Contact Us
                       </Link>
                     </li>
-                    <li className="nav__menu-item d-block d-md-none">
-                      <Link href="/register" className="btn btn--secondary">
-                        Sign Up
-                      </Link>
+                    {/* research */}
+                    <li className="nav__menu-item nav__menu-item--dropdown">
+                      <a
+                        className={`nav__menu-link nav__menu-link--dropdown ${isSubMenuButton(
+                          "research"
+                        )}`}
+                        onClick={() => handleSubmenu("research")}
+                      >
+                        Researches
+                      </a>
+                      <div
+                        className={`nav__dropdown nav__dropdown--alt ${isSubMenuOpen(
+                          "research"
+                        )}`}
+                      >
+                        <ul>
+                          <li>
+                            <Link
+                              className="nav__dropdown-item hide-nav"
+                              href="/"
+                            >
+                              Data Analysis
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              className="nav__dropdown-item hide-nav"
+                              href="/"
+                            >
+                              Feature Engineering
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              className="nav__dropdown-item hide-nav"
+                              href="/"
+                            >
+                              Modeling
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              className="nav__dropdown-item hide-nav"
+                              href="/"
+                            >
+                              Back-testing
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              className="nav__dropdown-item hide-nav"
+                              href="/"
+                            >
+                              Deep Learning
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              className="nav__dropdown-item hide-nav"
+                              href="/"
+                            >
+                              Financial Derivatives
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              className="nav__dropdown-item hide-nav"
+                              href="/"
+                            >
+                              Natural Language Processing
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              className="nav__dropdown-item hide-nav"
+                              href="/"
+                            >
+                              Large Language Models
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                   </ul>
                   <div className="social">
@@ -372,11 +282,6 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                   </div>
                 </div>
                 <div className="nav__uncollapsed">
-                  <div className="nav__uncollapsed-item d-none d-md-flex">
-                    <Link href="/register" className="btn btn--secondary">
-                      Sign Up
-                    </Link>
-                  </div>
                   <button
                     className={
                       (openNav ? " nav__bar-toggle" : " ") +

@@ -5,7 +5,7 @@ import BlogLayoutOne from "@/components/containers/blog/BlogLayoutOne";
 
 const Blog = () => {
   return (
-    <Layout header={true} footer={2}>
+    <Layout header={true} footer={1}>
       <Banner desc="Latest Blog" page="Latest Blog" />
       <BlogLayoutOne />
     </Layout>

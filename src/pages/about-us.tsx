@@ -8,10 +8,9 @@ import FaqLight from "@/components/containers/faq/FaqLight";
 import TestimonialAbout from "@/components/containers/testimonial/TestimonialAbout";
 import CtaAbout from "@/components/containers/cta/CtaAbout";
 
-
 const AboutUs = () => {
   return (
-    <Layout header={true} footer={2}>
+    <Layout header={true} footer={1}>
       <Banner desc="About TechAI" page="Our Teams" />
       <AboutClone />
       <AboutSponsor />

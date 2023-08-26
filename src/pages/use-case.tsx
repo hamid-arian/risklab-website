@@ -7,7 +7,7 @@ import FaqLight from "@/components/containers/faq/FaqLight";
 
 const UseCase = () => {
   return (
-    <Layout header={true} footer={2}>
+    <Layout header={true} footer={1}>
       <Banner desc="Use Case" page="Use Case" />
       <UseCaseMain />
       <FaqLight />

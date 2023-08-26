@@ -15,7 +15,7 @@ import CtaOne from "@/components/containers/cta/CtaOne";
 
 const HomeLight = () => {
   return (
-    <Layout header={true} footer={2}>
+    <Layout header={true} footer={1}>
       <BannerOnelight />
       <OverviewOne />
       <VoiceSlider />
