@@ -4,6 +4,7 @@ import Link from "next/link";
 import AnimeOne from "public/images/footer-anime-one.png";
 import AnimeTwo from "public/images/footer-anime-two.png";
 import LogoTwo from "public/images/logo.gif";
+import NEWS from "@/data/news.json";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -57,18 +58,13 @@ const Footer = () => {
             >
               <h5 className="h5">Latest News</h5>
               <ul>
-                <li>
-                  <Link href="/about-us">RSE Computational Workshop</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">RSE Computational Workshop</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">RSE Computational Workshop</Link>
-                </li>
-                <li>
-                  <Link href="/use-case">RSE Computational Workshop</Link>
-                </li>
+                {NEWS.map((item, index) => (
+                  <li>
+                    <Link key={index} href={`/news/${item.id}`}>
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

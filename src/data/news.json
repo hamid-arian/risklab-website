@@ -1,20 +1,20 @@
 [
     {
-        "id": 0,
+        "id": 1,
         "title": "New Paper on Deep Learning in Quantitative Finance",
         "content": "Our team at RiskLab AI has just published a new paper discussing the application of deep learning techniques in quantitative finance. Read more about it",
         "link_title": "here",
         "link_url": "https://chat.openai.com"
     },
     {
-        "id": 1,
+        "id": 2,
         "title": "RiskLab AI Partners with [Partner Company Name] for Financial Derivatives Research",
         "content": "We're excited to announce a new collaboration with [Partner Company Name] in exploring cutting-edge research on financial derivatives and hedging strategies. Learn more about this partnership",
         "link_title": "here",
         "link_url": "https://chat.openai.com"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "RiskLab AI’s New Backtesting Tool Is Now Available",
         "content": "Our team has developed a new backtesting tool that will revolutionize strategy validation. Try it out",
         "link_title": "here",
