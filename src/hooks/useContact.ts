@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 import { contactSchema } from "@/utils/schemas";
+import { toast } from "react-hot-toast";
 
 const useContact = () => {
   // create provider form controller
@@ -12,7 +13,8 @@ const useContact = () => {
     },
     validationSchema: contactSchema,
     onSubmit: (values) => {
-      alert("Success.");
+      toast.success("Sent Successfully");
+      contactController.resetForm();
     },
   });
 

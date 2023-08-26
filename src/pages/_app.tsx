@@ -9,6 +9,8 @@ import "public/font-awesome/css/all.min.css";
 // custom icons
 import "public/glyphter/css/Glyphter.css";
 
+import { Toaster } from "react-hot-toast";
+
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,6 +26,17 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Suspense>
       <Component {...pageProps} />
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          duration: 3500,
+          style: {
+            zIndex: 999999999999,
+            fontSize: 14,
+            direction: "rtl",
+          },
+        }}
+      />
     </Suspense>
   );
 }
