@@ -59,7 +59,7 @@ const Footer = () => {
               <h5 className="h5">Latest News</h5>
               <ul>
                 {NEWS.map((item, index) => (
-                  <li>
+                  <li key={index}>
                     <Link key={index} href="/news">
                       {item.title}
                     </Link>
