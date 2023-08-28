@@ -18,7 +18,7 @@ const ContactMain = () => {
               data-aos-duration="600"
             >
               <h2 className="h3 text-center">
-                <span>Let&apos;s talk</span>
+                <span>Let&apos;s be in touch</span>
               </h2>
               <p className="w-100 text-center">
                 Fill out the contact form below, and our team will respond to
