@@ -24,35 +24,39 @@ const AboutClone = () => {
               data-aos-duration="600"
               data-aos-delay="600"
             >
-              <h2 className="h2">Enabling Visual AI for Everyone</h2>
+              <h2 className="h2">
+                A pioneering platform providing high-performance financial
+                intelligence.
+              </h2>
               <div className="paragraph">
                 <p className="fw-5 text-lg">
-                  Resemble&apos;s AI voice generator lets you create realistic
-                  human-like voiceovers in seconds.
+                  Founded by a team of expert quantitative researchers and data
+                  scientists.
                 </p>
                 <p>
-                  By making complicated tech simple, we strive to enable
-                  individuals and businesses of all sizes to benefit from the
-                  recent advances in Visual AI. Our tools simplify and
-                  accelerate workflows, foster creativity, and enable others to
-                  create new products.
+                  The inception of RiskLab AI was driven by the realization that
+                  traditional financial models were insufficient to address the
+                  rapidly changing financial landscape. Inspired by AI and
+                  machine learning advancements, we embarked on a journey to
+                  create a platform that seamlessly integrates academic research
+                  with direct industrial practice and applications.
                 </p>
               </div>
               <ul>
                 <li>
                   <i className="fa-solid fa-check"></i>
-                  Emotions
+                  AI
                 </li>
                 <li>
                   <i className="fa-solid fa-check"></i>
-                  Speech-To-Speech
+                  machine learning
                 </li>
                 <li>
                   <i className="fa-solid fa-check"></i>
-                  Localize
+                  Financial Intelligence
                 </li>
               </ul>
-              <div className="tour__content-cta">
+              {/* <div className="tour__content-cta">
                 <div className="trust">
                   <div className="review">
                     <i className="fa-solid fa-star"></i>
@@ -68,7 +72,7 @@ const AboutClone = () => {
                     request A Demo - its free
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
