@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import Layout from "@/components/layout/Layout";
 import Banner from "../../components/layout/banner/Banner";
 import ResearchCard from "@/components/research_card";
-import RESEARCHES from "@/data/researches.json";
+import { researches } from "@/data/researches.js";
 
 const Researches = () => {
   const [imgTab, setImgTab] = useState(0);
@@ -20,20 +20,12 @@ const Researches = () => {
         </div>
       </section>
       {/* researches list */}
-      <div className="row justify-content-center">
-        <div className="col-12 col-xl-10">
-          <div className="accordion" id="accordion">
-            {RESEARCHES?.map((research, index): any => (
-              <Fragment key={index}>
-                <ResearchCard
-                  research={research}
-                  imgTab={imgTab}
-                  setImgTab={setImgTab}
-                />
-              </Fragment>
-            ))}
-          </div>
-        </div>
+      <div className="researches_slider">
+        {researches?.map((research, index): any => (
+          <Fragment key={index}>
+            <ResearchCard research={research} />
+          </Fragment>
+        ))}
       </div>
     </Layout>
   );

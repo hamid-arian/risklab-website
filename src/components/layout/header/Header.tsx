@@ -88,7 +88,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
     } else if (pathname === "/researches") {
       logoSrc = LogoDark;
       logoSrcMobile = LogoDark;
-      return "header--dark";
+      return "header";
     } else if (pathname === "/index-light") {
       logoSrc = LogoLight;
       logoSrcMobile = LogoLight;
@@ -188,7 +188,10 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         className={`nav__menu-link nav__menu-link--dropdown ${isSubMenuButton(
                           "research"
                         )}`}
-                        onClick={() => handleSubmenu("research")}
+                        onClick={() => {
+                          handleSubmenu("research");
+                          router.push("/researches");
+                        }}
                       >
                         Researches
                       </a>
