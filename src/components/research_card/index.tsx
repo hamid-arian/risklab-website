@@ -15,9 +15,7 @@ const ResearchCard = ({ research }: any) => {
       <p>{research.content}</p>
       <div>
         <button
-          onClick={() =>
-            router.push(`/researches/view?research_id=${research.id}`)
-          }
+          onClick={() => router.push(`/researches/${research.id}`)}
           className="btn btn--primary"
           type="button"
         >

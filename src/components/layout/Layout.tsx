@@ -23,8 +23,6 @@ const Layout = ({ children, header, footer }: layoutProps) => {
 
   if (router.pathname === "/") {
     additionalClasses = " home-light";
-  } else if (router.pathname === "/library") {
-    additionalClasses = " home-light";
   } else if (router.pathname === "/about-us") {
     additionalClasses = " home-light";
   } else if (router.pathname === "/researches") {

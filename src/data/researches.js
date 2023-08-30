@@ -12,7 +12,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/financial-data-science/",
+    path: "financial-data-science",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/feature-engineering/",
+    path: "feature-engineering",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/financial-modeling/",
+    path: "financial-modeling",
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/model-validation/",
+    path: "model-validation",
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/backtesting/",
+    path: "backtesting",
   },
   {
     id: 6,
@@ -77,7 +77,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/deep-learning/",
+    path: "deep-learning",
   },
   {
     id: 7,
@@ -90,7 +90,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/pde/",
+    path: "pde",
   },
   {
     id: 8,
@@ -116,7 +116,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/optimization/",
+    path: "optimization",
   },
   {
     id: 10,
@@ -129,7 +129,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/risk-management/",
+    path: "risk-management",
   },
   {
     id: 11,
@@ -142,7 +142,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/hpc/",
+    path: "hpc",
   },
   {
     id: 12,
@@ -155,7 +155,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/quantum-computing/",
+    path: "quantum-computing",
   },
   {
     id: 13,
@@ -168,7 +168,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/nlp/",
+    path: "nlp",
   },
   {
     id: 14,
@@ -181,6 +181,6 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: "./markdown/large-language-model/",
+    path: "large-language-model",
   },
 ];
