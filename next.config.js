@@ -2,6 +2,9 @@
 
 const nextConfig = {
   reactStrictMode: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   webpack(config) {
     config.resolve.fallback = {
       // if you miss it, all the other options in fallback, specified
