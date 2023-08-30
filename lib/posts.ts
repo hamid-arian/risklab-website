@@ -1,9 +1,6 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { researches } from "@/data/researches";
-import { remark } from "remark";
-import html from "remark-html";
 
 export function getSortedPostsData(insidePathName: string) {
   const postsDirectory = path.join(process.cwd(), "posts", insidePathName);
