@@ -11,9 +11,12 @@ const Article = () => {
   const blogPost = useSelector((state: any) => state.app.blogPost);
 
   useEffect(() => {
-    if (!blogPost) {
-      router.push("/researches/");
-    }
+    const redirectToPrev = () => {
+      if (!blogPost) {
+        router.push("/researches/");
+      }
+    };
+    redirectToPrev();
   }, []);
 
   if (blogPost) {
@@ -24,11 +27,9 @@ const Article = () => {
         </section>
         <div className="view_article_markdown">
           <div>
-            <ReactMarkdown
-              children={blogPost.fileContents}
-              skipHtml={true}
-              remarkPlugins={[remarkGfm]}
-            />
+            <ReactMarkdown skipHtml={true} remarkPlugins={[remarkGfm]}>
+              {blogPost.fileContents}
+            </ReactMarkdown>
           </div>
         </div>
       </Layout>

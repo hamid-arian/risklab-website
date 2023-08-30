@@ -40,18 +40,13 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
   };
 
   // window resize
-  useEffect(() => {
-    const handleResizeHeader = (): void => {
-      setOpenNav(false);
-      setOpenSubMenu(null);
-    };
-
-    window.addEventListener("resize", handleResizeHeader);
-
-    return () => {
-      window.removeEventListener("resize", handleResizeHeader);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleResizeHeader = (): void => {
+  //     setOpenNav(false);
+  //     setOpenSubMenu(null);
+  //   };
+  //   handleResizeHeader();
+  // }, []);
 
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
