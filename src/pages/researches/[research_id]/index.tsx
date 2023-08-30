@@ -3,6 +3,7 @@ import Banner from "../../../components/layout/banner/Banner";
 import { researches } from "../../../data/researches";
 import Vscode from "../../../components/vscode";
 import { getSortedPostsData } from "../../../../lib/posts";
+import ReactMarkdown from "react-markdown";
 
 export async function getStaticProps(staticProps: any) {
   const params = staticProps.params;
@@ -46,7 +47,24 @@ const ViewResearch = ({ allPostsData, researchData }: any) => {
           </div>
           <div className="researches_articles">
             <h5>Research Articles</h5>
-            <div></div>
+            <div className="researches_articles_list">
+              {allPostsData
+                .filter((item: any) => item.id !== "Figs")
+                .map((article: any, index: number) => (
+                  <article key={index}>
+                    <h6>{article?.title}</h6>
+                    <span>
+                      {article?.fileContents
+                        ?.substring(0, 150)
+                        .replace(/\#/g, "")}{" "}
+                      ...
+                    </span>
+                    <button type="button" className="btn btn--primary">
+                      Read More
+                    </button>
+                  </article>
+                ))}
+            </div>
           </div>
         </section>
       </Layout>
