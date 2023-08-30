@@ -18,6 +18,9 @@ import "aos/dist/aos.css";
 import "@/styles/main.scss";
 import type { AppProps } from "next/app";
 
+import { store } from "@/store/store";
+import { Provider } from "react-redux";
+
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init();
@@ -25,18 +28,20 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <Suspense>
-      <Component {...pageProps} />
-      <Toaster
-        position="top-center"
-        toastOptions={{
-          duration: 3500,
-          style: {
-            zIndex: 999999999999,
-            fontSize: 14,
-            direction: "rtl",
-          },
-        }}
-      />
+      <Provider store={store}>
+        <Component {...pageProps} />
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            duration: 3500,
+            style: {
+              zIndex: 999999999999,
+              fontSize: 14,
+              direction: "rtl",
+            },
+          }}
+        />
+      </Provider>
     </Suspense>
   );
 }

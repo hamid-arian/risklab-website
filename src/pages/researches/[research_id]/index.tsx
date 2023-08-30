@@ -3,7 +3,7 @@ import Banner from "../../../components/layout/banner/Banner";
 import { researches } from "../../../data/researches";
 import Vscode from "../../../components/vscode";
 import { getSortedPostsData } from "../../../../lib/posts";
-import ReactMarkdown from "react-markdown";
+import { useRouter } from "next/router";
 
 export async function getStaticProps(staticProps: any) {
   const params = staticProps.params;
@@ -32,6 +32,7 @@ export async function getStaticPaths() {
 }
 
 const ViewResearch = ({ allPostsData, researchData }: any) => {
+  const router = useRouter();
   if (researchData) {
     return (
       <Layout header={true} footer={1}>
@@ -59,7 +60,15 @@ const ViewResearch = ({ allPostsData, researchData }: any) => {
                         .replace(/\#/g, "")}{" "}
                       ...
                     </span>
-                    <button type="button" className="btn btn--primary">
+                    <button
+                      onClick={() => {
+                        router.push(
+                          `/researches/${researchData?.id}/${article.id}`
+                        );
+                      }}
+                      type="button"
+                      className="btn btn--primary"
+                    >
                       Read More
                     </button>
                   </article>
