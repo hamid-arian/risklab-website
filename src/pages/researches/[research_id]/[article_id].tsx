@@ -8,7 +8,7 @@ import remarkGfm from "remark-gfm";
 
 const Article = () => {
   const router = useRouter();
-  const blogPost = useSelector((state) => state.app.blogPost);
+  const blogPost = useSelector((state: any) => state.app.blogPost);
 
   useEffect(() => {
     if (!blogPost) {
