@@ -4,6 +4,8 @@ import { researches } from "../../../data/researches";
 import Vscode from "../../../components/vscode";
 import { getSortedPostsData } from "../../../../lib/posts";
 import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
+import { setBlogPost } from "@/features/reducer";
 
 export async function getStaticProps(staticProps: any) {
   const params = staticProps.params;
@@ -33,6 +35,8 @@ export async function getStaticPaths() {
 
 const ViewResearch = ({ allPostsData, researchData }: any) => {
   const router = useRouter();
+  const dispatch = useDispatch();
+
   if (researchData) {
     return (
       <Layout header={true} footer={1}>
@@ -65,6 +69,7 @@ const ViewResearch = ({ allPostsData, researchData }: any) => {
                         router.push(
                           `/researches/${researchData?.id}/${article.id}`
                         );
+                        dispatch(setBlogPost(article));
                       }}
                       type="button"
                       className="btn btn--primary"

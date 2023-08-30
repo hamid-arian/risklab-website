@@ -202,7 +202,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                             <li key={index}>
                               <Link
                                 className="nav__dropdown-item hide-nav"
-                                href={`/researches/view?research_id=${research.id}`}
+                                href={`/researches/${research.id}`}
                               >
                                 {research.title}
                               </Link>

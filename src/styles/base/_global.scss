@@ -615,13 +615,20 @@ i {
 .researches_articles_list > article > button {
   margin-top: auto;
 }
+.view_article_markdown,
 .researches_code_base,
 .researches_articles {
   padding: 0 50px;
   margin-top: 30px;
 }
+.view_article_markdown > div {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(220, 220, 220, 0.5);
+}
 
 @media only screen and (max-width: 440px) {
+  .view_article_markdown,
   .researches_code_base,
   .researches_articles {
     padding: 0 10px;
