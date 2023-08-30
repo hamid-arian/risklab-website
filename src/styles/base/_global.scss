@@ -530,7 +530,8 @@ i {
   width: 50%;
   min-width: 500px;
   border-radius: 20px;
-  background-color: $secondary-color;
+  background-color: $white;
+  border: 1px solid rgba(220, 220, 220, 0.75);
   padding: 15px;
 }
 .library_terminal_box {

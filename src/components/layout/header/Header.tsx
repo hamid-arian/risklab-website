@@ -7,6 +7,7 @@ import LogoLight from "public/images/logo.gif";
 import LogoTwoDark from "public/images/logo.gif";
 import LogoTwoLight from "public/images/logo.gif";
 import LogoThreeDark from "public/images/logo.gif";
+import { researches } from "@/data/researches";
 
 interface HeaderProps {
   openNav: boolean;
@@ -201,70 +202,16 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         )}`}
                       >
                         <ul>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Data Analysis
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Feature Engineering
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Modeling
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Back-testing
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Deep Learning
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Financial Derivatives
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Natural Language Processing
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Large Language Models
-                            </Link>
-                          </li>
+                          {researches?.map((research, index) => (
+                            <li key={index}>
+                              <Link
+                                className="nav__dropdown-item hide-nav"
+                                href={`/researches/view?research_id=${research.id}`}
+                              >
+                                {research.title}
+                              </Link>
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </li>

@@ -1,7 +1,9 @@
 import styles from "./research_card.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const ResearchCard = ({ research }: any) => {
+  const router = useRouter();
   return (
     <div
       data-aos="fade-up"
@@ -12,7 +14,13 @@ const ResearchCard = ({ research }: any) => {
       <h5>{research.title}</h5>
       <p>{research.content}</p>
       <div>
-        <button className="btn btn--primary" type="button">
+        <button
+          onClick={() =>
+            router.push(`/researches/view?research_id=${research.id}`)
+          }
+          className="btn btn--primary"
+          type="button"
+        >
           View Articles
         </button>
       </div>
