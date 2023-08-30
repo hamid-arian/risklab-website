@@ -11,10 +11,17 @@ const Article = () => {
   const blogPost = useSelector((state: any) => state.app.blogPost);
 
   useEffect(() => {
-    if (!blogPost) {
-      router.push("/researches/");
-    }
-  }, []);
+    // eslint-disable-next-line
+    const redirectToPrev = () => {
+      // eslint-disable-next-line
+      if (!blogPost) {
+        // eslint-disable-next-line
+        router.push("/researches/");
+      }
+    };
+    // eslint-disable-next-line
+    redirectToPrev();
+  }, [router.isReady]);
 
   if (blogPost) {
     return (
@@ -24,11 +31,10 @@ const Article = () => {
         </section>
         <div className="view_article_markdown">
           <div>
-            <ReactMarkdown
-              children={blogPost.fileContents}
-              skipHtml={true}
-              remarkPlugins={[remarkGfm]}
-            />
+            {/* eslint-disable-next-line */}
+            <ReactMarkdown skipHtml={true} remarkPlugins={[remarkGfm]}>
+              {blogPost.fileContents}
+            </ReactMarkdown>
           </div>
         </div>
       </Layout>
