@@ -37,7 +37,7 @@ const Broadcast = () => {
                       </p>
                     </div>
                     <div className="section__content-cta">
-                      <Link href="/library" className="btn btn--secondary">
+                      <Link href="/researches" className="btn btn--secondary">
                         Get Library
                       </Link>
                     </div>

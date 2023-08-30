@@ -1,0 +1,21 @@
+.research_card {
+  border-radius: 10px;
+  border: 1px solid rgba(220, 220, 220, 0.5);
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.research_card > div {
+  margin-top: auto;
+}
+.research_card > img {
+  margin-bottom: 16px;
+}
+.research_card > h5 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.research_card > p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}

@@ -7,6 +7,7 @@ import LogoLight from "public/images/logo.gif";
 import LogoTwoDark from "public/images/logo.gif";
 import LogoTwoLight from "public/images/logo.gif";
 import LogoThreeDark from "public/images/logo.gif";
+import { researches } from "@/data/researches";
 
 interface HeaderProps {
   openNav: boolean;
@@ -81,14 +82,10 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
       logoSrc = LogoDark;
       logoSrcMobile = LogoDark;
       return "header";
-    } else if (pathname === "/library") {
-      logoSrc = LogoDark;
-      logoSrcMobile = LogoDark;
-      return "header--dark";
     } else if (pathname === "/researches") {
       logoSrc = LogoDark;
       logoSrcMobile = LogoDark;
-      return "header--dark";
+      return "header";
     } else if (pathname === "/index-light") {
       logoSrc = LogoLight;
       logoSrcMobile = LogoLight;
@@ -188,7 +185,10 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         className={`nav__menu-link nav__menu-link--dropdown ${isSubMenuButton(
                           "research"
                         )}`}
-                        onClick={() => handleSubmenu("research")}
+                        onClick={() => {
+                          handleSubmenu("research");
+                          router.push("/researches");
+                        }}
                       >
                         Researches
                       </a>
@@ -198,70 +198,16 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         )}`}
                       >
                         <ul>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Data Analysis
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Feature Engineering
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Modeling
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Back-testing
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Deep Learning
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Financial Derivatives
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Natural Language Processing
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="nav__dropdown-item hide-nav"
-                              href="/"
-                            >
-                              Large Language Models
-                            </Link>
-                          </li>
+                          {researches?.map((research, index) => (
+                            <li key={index}>
+                              <Link
+                                className="nav__dropdown-item hide-nav"
+                                href={`/researches/${research.id}`}
+                              >
+                                {research.title}
+                              </Link>
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </li>

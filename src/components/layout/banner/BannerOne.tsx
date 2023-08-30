@@ -18,7 +18,7 @@ const BannerOne = () => {
                 High-Performance Cutting-Edge Financial Intelligence
               </h1>
               <div className="section__content-cta">
-                <Link href="/library" className="btn btn--primary">
+                <Link href="/researches" className="btn btn--primary">
                   Open-source Solutions
                 </Link>
                 <Link href="/contact-us" className="btn btn--secondary">

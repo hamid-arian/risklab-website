@@ -1,0 +1,55 @@
+.vscode_wrapper {
+  border: 1px solid rgba(220, 220, 220, 0.5);
+  border-radius: 10px;
+}
+.vscode_header {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: rgba(220, 220, 220, 0.2);
+}
+.vscode_header > div:nth-child(1) {
+  position: absolute;
+  left: 90px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.vscode_header > div:nth-child(1) > button {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(220, 220, 220, 0);
+}
+.selected_lang_btn {
+  background: rgba(220, 220, 220, 0.75) !important;
+  border: none !important;
+}
+.vscode_btn {
+  position: absolute;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.vscode_btn > span {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 9999px;
+}
+.vscode_btn > span:nth-child(1) {
+  background-color: rgb(247, 69, 68);
+}
+.vscode_btn > span:nth-child(2) {
+  background-color: rgb(250, 173, 21);
+}
+.vscode_btn > span:nth-child(3) {
+  background-color: rgb(55, 192, 39);
+}

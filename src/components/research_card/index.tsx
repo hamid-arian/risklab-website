@@ -1,37 +1,26 @@
-const ResearchCard = ({ research, imgTab, setImgTab }: any) => {
+import styles from "./research_card.module.css";
+import Image from "next/image";
+import { useRouter } from "next/router";
+
+const ResearchCard = ({ research }: any) => {
+  const router = useRouter();
   return (
     <div
-      className="accordion-item"
       data-aos="fade-up"
       data-aos-duration="600"
-      data-aos-delay="600"
+      className={styles.research_card}
     >
-      <h5 className="accordion-header" id={`heading${research.id}`}>
+      <Image src={research.icon} alt="research" />
+      <h5>{research.title}</h5>
+      <p>{research.content}</p>
+      <div>
         <button
-          className={
-            (imgTab == research.id ? "  " : " collapsed") + " accordion-button"
-          }
-          onClick={() => setImgTab(research.id)}
+          onClick={() => router.push(`/researches/${research.id}`)}
+          className="btn btn--primary"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseOne"
-          aria-expanded="true"
-          aria-controls="collapseOne"
         >
-          {research.title}
+          View Articles
         </button>
-      </h5>
-      <div
-        id={`collapse${research.id}`}
-        className={`accordion-collapse collapse${
-          imgTab === research.id ? " show " : ""
-        }`}
-        aria-labelledby={`heading${research.id}`}
-        data-bs-parent="#accordion"
-      >
-        <div className="accordion-body">
-          <p>{research.content}</p>
-        </div>
       </div>
     </div>
   );
