@@ -40,27 +40,34 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
   };
 
   // window resize
-  // useEffect(() => {
-  //   const handleResizeHeader = (): void => {
-  //     setOpenNav(false);
-  //     setOpenSubMenu(null);
-  //   };
-  //   handleResizeHeader();
-  // }, []);
+  useEffect(() => {
+    // eslint-disable-next-line
+    const handleResizeHeader = (): void => {
+      setOpenNav(false);
+      setOpenSubMenu(null);
+    };
+    // eslint-disable-next-line
+    handleResizeHeader();
+  }, []);
 
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
+    // eslint-disable-next-line
     const handleScroll = () => {
+      // eslint-disable-next-line
       const scrollPosition = window.scrollY;
+      // eslint-disable-next-line
       if (scrollPosition > 100) {
+        // eslint-disable-next-line
         setScrolled(true);
       } else {
+        // eslint-disable-next-line
         setScrolled(false);
       }
     };
-
+    // eslint-disable-next-line
     window.addEventListener("scroll", handleScroll);
-
+    // eslint-disable-next-line
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
