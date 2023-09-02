@@ -3,12 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 
 export function getSortedPostsData(insidePathName: string) {
-  const postsDirectory = path.join(
-    process.cwd(),
-    "src",
-    "posts",
-    insidePathName
-  );
+  const postsDirectory = path.join(process.cwd(), "posts", insidePathName);
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
@@ -28,7 +23,6 @@ export function getSortedPostsData(insidePathName: string) {
     // Combine the data with the id
     return {
       id,
-      title: id,
       ...matterResult.data,
       fileContents,
     };
