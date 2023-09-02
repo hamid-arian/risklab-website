@@ -15,7 +15,8 @@ export async function getStaticProps(staticProps: any) {
   if (researchData?.path) {
     insidePathName = researchData.path;
   }
-  const allPostsData = getSortedPostsData(insidePathName);
+  let allPostsData = null;
+  allPostsData = getSortedPostsData(insidePathName);
   return {
     props: {
       allPostsData,
@@ -27,7 +28,7 @@ export async function getStaticProps(staticProps: any) {
 export async function getStaticPaths() {
   return {
     paths: researches.map((item) => {
-      return { params: { research_id: `${item.id}` } };
+      return { params: { research_id: `${item.id.toString()}` } };
     }),
     fallback: false,
   };
@@ -57,7 +58,7 @@ const ViewResearch = ({ allPostsData, researchData }: any) => {
                 .filter((item: any) => item.id !== "Figs")
                 .map((article: any, index: number) => (
                   <article key={index}>
-                    <h6>{article?.title}</h6>
+                    <h6>{article?.id}</h6>
                     <span>
                       {article?.fileContents
                         ?.substring(0, 150)

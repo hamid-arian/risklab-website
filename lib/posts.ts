@@ -23,7 +23,6 @@ export function getSortedPostsData(insidePathName: string) {
     // Combine the data with the id
     return {
       id,
-      title: id,
       ...matterResult.data,
       fileContents,
     };

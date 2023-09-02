@@ -103,7 +103,7 @@ export const researches = [
         "pip install RiskLabAI \nimport RiskLabAI \nRiskLabAI.function_example()",
       julia: "add RiskLabAI \nusing RiskLabAI \nRiskLabAI.function_example()",
     },
-    path: null,
+    path: "financial-derivatives-and-hedging-strategies",
   },
   {
     id: 9,
