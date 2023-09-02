@@ -53,33 +53,37 @@ const ViewResearch = ({ allPostsData, researchData }: any) => {
           </div>
           <div className="researches_articles">
             <h5>Research Articles</h5>
-            <div className="researches_articles_list">
-              {allPostsData
-                .filter((item: any) => item.id !== "Figs")
-                .map((article: any, index: number) => (
-                  <article key={index}>
-                    <h6>{article?.id}</h6>
-                    <span>
-                      {article?.fileContents
-                        ?.substring(0, 150)
-                        .replace(/\#/g, "")}{" "}
-                      ...
-                    </span>
-                    <button
-                      onClick={() => {
-                        router.push(
-                          `/researches/${researchData?.id}/${article.id}`
-                        );
-                        dispatch(setBlogPost(article));
-                      }}
-                      type="button"
-                      className="btn btn--primary"
-                    >
-                      Read More
-                    </button>
-                  </article>
-                ))}
-            </div>
+            {allPostsData?.length === 0 ? (
+              <h6 style={{ color: "rgb(150,150,150)" }}>Any Article Yet!</h6>
+            ) : (
+              <div className="researches_articles_list">
+                {allPostsData
+                  .filter((item: any) => item.id !== "Figs")
+                  .map((article: any, index: number) => (
+                    <article key={index}>
+                      <h6>{article?.id}</h6>
+                      <span>
+                        {article?.fileContents
+                          ?.substring(0, 150)
+                          .replace(/\#/g, "")}{" "}
+                        ...
+                      </span>
+                      <button
+                        onClick={() => {
+                          router.push(
+                            `/researches/${researchData?.id}/${article.id}`
+                          );
+                          dispatch(setBlogPost(article));
+                        }}
+                        type="button"
+                        className="btn btn--primary"
+                      >
+                        Read More
+                      </button>
+                    </article>
+                  ))}
+              </div>
+            )}
           </div>
         </section>
       </Layout>
