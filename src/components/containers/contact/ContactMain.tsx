@@ -24,20 +24,6 @@ const ContactMain = () => {
                 Fill out the contact form below, and our team will respond to
                 your query as soon as possible.
               </p>
-              {/* <div className="arrow">
-                <Image src={Arrow} alt="Image" />
-              </div>
-              <div className="cta-contact">
-                <Link href="tel:223-087-9756">
-                  Schedule a call
-                  <i className="fa-solid fa-angle-right"> </i>
-                </Link>
-                <span>OR</span>
-                <Link href="mailto:support@techai.com">
-                  Request a feature
-                  <i className="fa-solid fa-angle-right"> </i>
-                </Link>
-              </div> */}
             </div>
           </div>
           <div className="col-12 col-lg-6 col-xxl-6">
