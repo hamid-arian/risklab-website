@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
             style: {
               zIndex: 999999999999,
               fontSize: 14,
-              direction: "rtl",
+              direction: "ltr",
             },
           }}
         />

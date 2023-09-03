@@ -1,11 +1,13 @@
 import useContact from "@/hooks/useContact";
 import React from "react";
+import CircleLoading from "public/circle_loading.svg";
+import Image from "next/image";
 // import Image from "next/image";
 // import Link from "next/link";
 // import Arrow from "public/images/arrow-contact.png";
 
 const ContactMain = () => {
-  const { contactController } = useContact();
+  const { contactController, loading } = useContact();
 
   return (
     <section className="section contact-main">
@@ -24,20 +26,6 @@ const ContactMain = () => {
                 Fill out the contact form below, and our team will respond to
                 your query as soon as possible.
               </p>
-              {/* <div className="arrow">
-                <Image src={Arrow} alt="Image" />
-              </div>
-              <div className="cta-contact">
-                <Link href="tel:223-087-9756">
-                  Schedule a call
-                  <i className="fa-solid fa-angle-right"> </i>
-                </Link>
-                <span>OR</span>
-                <Link href="mailto:support@techai.com">
-                  Request a feature
-                  <i className="fa-solid fa-angle-right"> </i>
-                </Link>
-              </div> */}
             </div>
           </div>
           <div className="col-12 col-lg-6 col-xxl-6">
@@ -189,8 +177,19 @@ const ContactMain = () => {
                     type="submit"
                     className="w-100 btn btn--nonary d-flex justify-content-center"
                   >
-                    Send
-                    <i className="fa-solid fa-paper-plane"></i>
+                    {loading ? (
+                      <Image
+                        width={18}
+                        height={18}
+                        src={CircleLoading}
+                        alt="Loading..."
+                      />
+                    ) : (
+                      <>
+                        "Send"
+                        <i className="fa-solid fa-paper-plane"></i>
+                      </>
+                    )}
                   </button>
                 </div>
               </form>
