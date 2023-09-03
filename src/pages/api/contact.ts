@@ -11,15 +11,15 @@ const transporter = nodemailer.createTransport({
   port: 465,
   host: "smtp.gmail.com",
   auth: {
-    user: process.env.EMAIL,
-    pass: process.env.EMAIL_PASS,
+    user: "mohammad6vakili@gmail.com",
+    pass: "vdjtrqwjwroockeq",
   },
   secure: true,
 });
 
 const mailOptions = {
-  from: process.env.EMAIL,
-  to: process.env.EMAIL,
+  from: "mohammad6vakili@gmail.com",
+  to: "mohammad6vakili@gmail.com",
 };
 
 export default async function (
