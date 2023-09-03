@@ -58,6 +58,7 @@ export default async function (
         </div>
     </div>`,
       });
+      return res.status(200).json({ message: "Submited Successfully!" });
     } catch (error) {
       console.log(error);
       return res.status(400).json({ message: "Server Error!" });

@@ -1,11 +1,13 @@
 import useContact from "@/hooks/useContact";
 import React from "react";
+import CircleLoading from "public/circle_loading.svg";
+import Image from "next/image";
 // import Image from "next/image";
 // import Link from "next/link";
 // import Arrow from "public/images/arrow-contact.png";
 
 const ContactMain = () => {
-  const { contactController } = useContact();
+  const { contactController, loading } = useContact();
 
   return (
     <section className="section contact-main">
@@ -175,8 +177,19 @@ const ContactMain = () => {
                     type="submit"
                     className="w-100 btn btn--nonary d-flex justify-content-center"
                   >
-                    Send
-                    <i className="fa-solid fa-paper-plane"></i>
+                    {loading ? (
+                      <Image
+                        width={18}
+                        height={18}
+                        src={CircleLoading}
+                        alt="Loading..."
+                      />
+                    ) : (
+                      <>
+                        "Send"
+                        <i className="fa-solid fa-paper-plane"></i>
+                      </>
+                    )}
                   </button>
                 </div>
               </form>

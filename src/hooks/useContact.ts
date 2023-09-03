@@ -1,8 +1,10 @@
 import { useFormik } from "formik";
 import { contactSchema } from "@/utils/schemas";
 import { toast } from "react-hot-toast";
+import { useState } from "react";
 
 const useContact = () => {
+  const [loading, setLoading] = useState(false);
   // create provider form controller
   const contactController = useFormik({
     initialValues: {
@@ -13,7 +15,6 @@ const useContact = () => {
     },
     validationSchema: contactSchema,
     onSubmit: (values) => {
-      toast.success("Sent Successfully");
       sendContactForm();
     },
   });
@@ -26,6 +27,7 @@ const useContact = () => {
       subject: contactController.values.contactSubject,
       message: contactController.values.contactMessage,
     };
+    setLoading(true);
     await fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -35,21 +37,21 @@ const useContact = () => {
       body: JSON.stringify(data),
     })
       .then((res) => {
-        console.log("Response received");
-        alert(".then");
+        setLoading(false);
         if (res.status === 200) {
+          contactController.resetForm();
+          setLoading(false);
           toast.success("Submited Successfully!");
-          // contactController.resetForm();
-          alert("status 200");
         }
       })
       .catch((err) => {
         console.log(err);
-        alert("catch");
+        setLoading(false);
       });
+    setLoading(false);
   };
 
-  const exports = { contactController };
+  const exports = { contactController, loading };
   return exports;
 };
 export default useContact;
