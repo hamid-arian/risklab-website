@@ -11,11 +11,7 @@ const CloneLight = () => {
       <div className="container">
         <div className="row items-gap align-items-center">
           <div className="col-12 col-lg-6">
-            <div
-              className="clone__thumb"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="clone__thumb">
               <CloneItem
                 img={Thumb}
                 audio="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
@@ -45,11 +41,7 @@ const CloneLight = () => {
           <div className="col-12 col-lg-6">
             <div className="clone__content section__content">
               <h2 className="h2">Pitch Perfect Voice Clones</h2>
-              <div
-                className="paragraph"
-                data-aos="fade-up"
-                data-aos-duration="600"
-              >
+              <div className="paragraph">
                 <p className="fw-5 text-lg">
                   Resemble&apos;s AI voice generator lets you create realistic
                   human-like voiceovers in seconds.

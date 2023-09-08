@@ -13,7 +13,7 @@ const Researches = () => {
       <section className="section">
         <Banner title={"Researches"} />
         <div className="library_description">
-          <h6 data-aos="fade-up" data-aos-duration="600">
+          <h6>
             Our research has led to groundbreaking insights in the field of
             quantitative finance.
           </h6>

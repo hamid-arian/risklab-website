@@ -129,7 +129,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                 <div className="nav__logo" id="header_logo">
                   <Link href="/">
                     <Image src={logoSrc} priority alt="Logo" />
-                    <span className="logo_name">RiskLabAI</span>
+                    <span className="logo_name">RiskLab AI Library</span>
                   </Link>
                 </div>
                 <div
@@ -140,7 +140,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                   <div className="nav__menu-logo d-flex d-xl-none">
                     <Link href="/" className="text-center hide-nav">
                       <Image src={logoSrcMobile} priority alt="Logo" />
-                      <span className="logo_name">RiskLabAI</span>
+                      <span className="logo_name">RiskLab AI Library</span>
                     </Link>
                     <button
                       aria-label="close the menu"

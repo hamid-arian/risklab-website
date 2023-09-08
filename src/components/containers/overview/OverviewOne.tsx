@@ -12,44 +12,25 @@ const OverviewOne = () => {
       <div className="container">
         <div className="row items-gap">
           <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className="overview__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="overview__single">
               <Image src={DataAnalysis} priority alt="Image" />
               <p className="h6">Data Analysis</p>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className="overview__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="200"
-            >
+            <div className="overview__single">
               <Image src={NeuralNetworks} priority alt="Image" />
               <p className="h6">Neural Networks</p>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className="overview__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="500"
-            >
+            <div className="overview__single">
               <Image src={FeatureImportance} priority alt="Image" />
               <p className="h6">Feature Importance</p>
             </div>
           </div>
           <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className="overview__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="800"
-            >
+            <div className="overview__single">
               <Image src={BackTesting} priority alt="Image" />
               <p className="h6">Back testing</p>
             </div>

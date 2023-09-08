@@ -32,9 +32,11 @@ const Article = () => {
         <div className="view_article_markdown">
           <div>
             {/* eslint-disable-next-line */}
-            <ReactMarkdown skipHtml={true} remarkPlugins={[remarkGfm]}>
-              {blogPost.fileContents}
-            </ReactMarkdown>
+            <ReactMarkdown
+              skipHtml={true}
+              remarkPlugins={[remarkGfm]}
+              children={blogPost.fileContents}
+            />
           </div>
         </div>
       </Layout>

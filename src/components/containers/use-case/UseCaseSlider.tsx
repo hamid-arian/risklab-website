@@ -15,9 +15,7 @@ const UseCaseSlider = () => {
             <div className="section__header--secondary">
               <div className="row align-items-center items-gap">
                 <div className="col-12 col-lg-5">
-                  <h2 className="h2" data-aos="fade-up" data-aos-duration="600">
-                    Leadership
-                  </h2>
+                  <h2 className="h2">Leadership</h2>
                 </div>
                 {/* <div className="col-12 col-lg-7">
                   <div className="case-pagination cmn-pagination"></div>

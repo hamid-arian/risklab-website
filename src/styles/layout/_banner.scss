@@ -42,11 +42,7 @@
 
 .banner-one-alter {
   // border: 10px solid red !important;
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.9),
-      rgba(255, 255, 255, 0.45)
-    ),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(27, 27, 27, 0.45)),
     url("../../../public/images/toronto.jpg");
   background-size: cover;
 }
