@@ -14,11 +14,7 @@ const ContactMain = () => {
       <div className="container">
         <div className="row items-gap flex-column align-items-center">
           <div className="col-12 col-lg-6 col-xxl-6">
-            <div
-              className="contact-main__content w-100"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="contact-main__content w-100">
               <h2 className="h3 text-center">
                 <span>Let&apos;s be in touch</span>
               </h2>
@@ -29,19 +25,10 @@ const ContactMain = () => {
             </div>
           </div>
           <div className="col-12 col-lg-6 col-xxl-6">
-            <div
-              className="contact-main__form"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="contact-main__form">
               <form onSubmit={contactController.handleSubmit}>
                 {/* fullname */}
-                <div
-                  className="group-input"
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                  data-aos-delay="600"
-                >
+                <div className="group-input">
                   <input
                     value={contactController.values.contactName}
                     onChange={contactController.handleChange}
@@ -69,11 +56,7 @@ const ContactMain = () => {
                   </span>
                 </div>
                 {/* email */}
-                <div
-                  className="group-input"
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                >
+                <div className="group-input">
                   <input
                     value={contactController.values.contactEmail}
                     onChange={contactController.handleChange}
@@ -103,11 +86,7 @@ const ContactMain = () => {
                   ) : null}
                 </div>
                 {/* subject */}
-                <div
-                  className="group-input"
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                >
+                <div className="group-input">
                   <input
                     value={contactController.values.contactSubject}
                     onChange={contactController.handleChange}
@@ -138,11 +117,7 @@ const ContactMain = () => {
                   ) : null}
                 </div>
                 {/* message */}
-                <div
-                  className="group-input"
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                >
+                <div className="group-input">
                   <textarea
                     value={contactController.values.contactMessage}
                     onChange={contactController.handleChange}

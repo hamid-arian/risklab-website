@@ -16,11 +16,7 @@ const Sponsor = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div
-              className="sponsor__inner"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="sponsor__inner">
               <div className="section__header">
                 <h4 className="h4">Trusted by users and teams of all sizes</h4>
               </div>

@@ -1,11 +1,6 @@
 const NewsCard = ({ news }: any) => {
   return (
-    <div
-      className="accordion-item"
-      data-aos="fade-up"
-      data-aos-duration="600"
-      data-aos-delay="600"
-    >
+    <div className="accordion-item">
       <h5 className="accordion-header" id={`heading`}>
         <button className={"accordion-button"} type="button">
           {news.title}

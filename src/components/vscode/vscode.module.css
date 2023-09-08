@@ -1,6 +1,7 @@
 .vscode_wrapper {
   border: 1px solid rgba(220, 220, 220, 0.5);
   border-radius: 10px;
+  background: rgb(30, 30, 30);
 }
 .vscode_header {
   position: relative;
@@ -11,7 +12,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background: rgba(220, 220, 220, 0.2);
+  background: rgb(30, 30, 30);
 }
 .vscode_header > div:nth-child(1) {
   position: absolute;
@@ -27,10 +28,15 @@
   justify-content: center;
   align-items: center;
   background: rgba(220, 220, 220, 0);
+  color: rgba(255, 255, 255, 0.4);
+}
+.vscode_header > div:nth-child(1) > button:hover {
+  color: white !important;
 }
 .selected_lang_btn {
-  background: rgba(220, 220, 220, 0.75) !important;
+  background: rgba(60, 60, 60, 0.5) !important;
   border: none !important;
+  color: white !important;
 }
 .vscode_btn {
   position: absolute;

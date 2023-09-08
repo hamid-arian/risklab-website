@@ -10,11 +10,7 @@ const Banner = ({ title }: any) => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div
-              className="cmn-banner__content"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="cmn-banner__content">
               <h3 className="h3">{title}</h3>
             </div>
           </div>

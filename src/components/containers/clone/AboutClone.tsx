@@ -9,21 +9,12 @@ const AboutClone = () => {
       <div className="container">
         <div className="row items-gap align-items-center">
           <div className="col-12 col-lg-6">
-            <div
-              className="about__thumb"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="about__thumb">
               <Image src={Thumb} alt="Image" />
             </div>
           </div>
           <div className="col-12 col-lg-6">
-            <div
-              className="clone__content section__content"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="600"
-            >
+            <div className="clone__content section__content">
               <h2 className="h2">
                 A pioneering platform providing high-performance financial
                 intelligence.

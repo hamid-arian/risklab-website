@@ -11,7 +11,7 @@ const News = () => {
       <section className="section">
         <Banner title={"News & Updates"} />
         <div className="library_description">
-          <h6 data-aos="fade-up" data-aos-duration="600">
+          <h6>
             Stay informed with our latest developments in quantitative research
             in finance. At RiskLab AI, we’re constantly pushing the boundaries
             of financial intelligence, delivering cutting-edge insights and

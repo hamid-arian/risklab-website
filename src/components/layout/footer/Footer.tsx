@@ -14,11 +14,7 @@ const Footer = () => {
         <div className="row items-gap-two">
           {/* researches */}
           <div className="col-12 col-sm-6 col-lg-3">
-            <div
-              className="footer__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="footer__single">
               <h5 className="h5">our Researches</h5>
               <ul>
                 <li>
@@ -50,12 +46,7 @@ const Footer = () => {
           </div>
           {/* latest news */}
           <div className="col-12 col-sm-6 col-lg-3">
-            <div
-              className="footer__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="600"
-            >
+            <div className="footer__single">
               <h5 className="h5">Latest News</h5>
               <ul>
                 {NEWS.map((item, index) => (
@@ -70,12 +61,7 @@ const Footer = () => {
           </div>
           {/* leadership */}
           <div className="col-12 col-sm-6 col-lg-3">
-            <div
-              className="footer__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="600"
-            >
+            <div className="footer__single">
               <h5 className="h5">Leadership</h5>
               <ul>
                 <li>
@@ -89,13 +75,8 @@ const Footer = () => {
           </div>
           {/* about */}
           <div className="col-12 col-sm-6 col-lg-3">
-            <div
-              className="footer__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="200"
-            >
-              <h5 className="h5">About RiskLabAI</h5>
+            <div className="footer__single">
+              <h5 className="h5">About RiskLab AI Library</h5>
               <ul>
                 <li>
                   <Link href="/about-us">About</Link>
@@ -122,7 +103,7 @@ const Footer = () => {
                   >
                     <Link href="/">
                       <Image src={LogoTwo} alt="Image" />
-                      <span className="logo_name">RiskLabAI</span>
+                      <span className="logo_name">RiskLab AI Library</span>
                     </Link>
                   </div>
                 </div>
@@ -130,7 +111,7 @@ const Footer = () => {
                   <p className="text-center">
                     Copyright &copy;
                     <span id="copyYear"> {currentYear} </span>
-                    <Link href="/"> RiskLabAI </Link>.
+                    <span> Luis Seco, Hamid Arian</span>.
                   </p>
                 </div>
                 <div className="col-12 col-lg-3">

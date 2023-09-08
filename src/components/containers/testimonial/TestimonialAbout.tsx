@@ -15,11 +15,7 @@ const TestimonialAbout = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 col-xl-8">
-            <div
-              className="section__header"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="section__header">
               <h2 className="h2">our Leadership</h2>
             </div>
           </div>
@@ -27,11 +23,7 @@ const TestimonialAbout = () => {
         <div className="row items-gap">
           {/* luis seco */}
           <div className="col-12 col-lg-6">
-            <div
-              className="review__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="review__single">
               {/* <div className="review-head">
                 <div className="review__icons">
                   <i className="fa-solid fa-star"></i>
@@ -64,11 +56,7 @@ const TestimonialAbout = () => {
           </div>
           {/* hamid arian */}
           <div className="col-12 col-lg-6">
-            <div
-              className="review__single"
-              data-aos="fade-up"
-              data-aos-duration="600"
-            >
+            <div className="review__single">
               {/* <div className="review-head">
                 <div className="review__icons">
                   <i className="fa-solid fa-star"></i>

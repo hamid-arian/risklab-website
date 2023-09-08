@@ -44,9 +44,7 @@ const ViewResearch = ({ allPostsData, researchData }: any) => {
         <section className="section">
           <Banner title={researchData.title} />
           <div className="library_description">
-            <h6 data-aos="fade-up" data-aos-duration="600">
-              {researchData?.content}
-            </h6>
+            <h6>{researchData?.content}</h6>
           </div>
           <div className="researches_code_base">
             <Vscode data={researchData} />

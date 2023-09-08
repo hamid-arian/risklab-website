@@ -33,6 +33,7 @@ const Vscode = ({ data }: any) => {
       </div>
       {selectedLang === "python" ? (
         <Editor
+          theme={"vs-dark"}
           height="20vh"
           defaultLanguage={selectedLang}
           defaultValue={data?.cli?.python}
@@ -40,6 +41,7 @@ const Vscode = ({ data }: any) => {
       ) : null}
       {selectedLang === "julia" ? (
         <Editor
+          theme={"vs-dark"}
           height="20vh"
           defaultLanguage={selectedLang}
           defaultValue={data?.cli?.julia}
