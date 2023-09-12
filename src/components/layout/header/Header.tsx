@@ -83,11 +83,15 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
     if (pathname === "/") {
       logoSrc = LogoDark;
       logoSrcMobile = LogoDark;
-      return "header";
+      return "header--dark";
     } else if (pathname === "/researches") {
       logoSrc = LogoDark;
       logoSrcMobile = LogoDark;
-      return "header";
+      return "header--dark";
+    } else if (pathname === "/news") {
+      logoSrc = LogoDark;
+      logoSrcMobile = LogoDark;
+      return "header--dark";
     } else if (pathname === "/index-light") {
       logoSrc = LogoLight;
       logoSrcMobile = LogoLight;
@@ -99,7 +103,7 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
     } else if (pathname === "/index-two-light") {
       logoSrc = LogoTwoLight;
       logoSrcMobile = LogoTwoLight;
-      return "header--light header-two";
+      return "header--dark header-two";
     } else if (pathname === "/index-three") {
       logoSrc = LogoThreeDark;
       logoSrcMobile = LogoThreeDark;
@@ -107,16 +111,16 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
     } else if (pathname === "/index-three-light") {
       logoSrc = LogoLight;
       logoSrcMobile = LogoLight;
-      return "header--light";
+      return "header--dark";
     }
     return "";
   };
 
   const router = useRouter();
-  const headerClass = getPageHeaderClass(router.pathname);
+  const headerClass = "header--dark";
 
   const combinedClasses = `${
-    scrolled ? " header-active" : " "
+    scrolled ? " header-active" : ""
   } ${headerClass} ${defaultClasses}`;
 
   return (
@@ -140,7 +144,9 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                   <div className="nav__menu-logo d-flex d-xl-none">
                     <Link href="/" className="text-center hide-nav">
                       <Image src={logoSrcMobile} priority alt="Logo" />
-                      <span className="logo_name">RiskLab AI Library</span>
+                      <span style={{ fontSize: 14 }} className="logo_name">
+                        RiskLab AI Library
+                      </span>
                     </Link>
                     <button
                       aria-label="close the menu"

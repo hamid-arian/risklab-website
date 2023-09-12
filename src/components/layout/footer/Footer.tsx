@@ -95,26 +95,15 @@ const Footer = () => {
         <div className="row">
           <div className="col-12">
             <div className="copyright-inner">
-              <div className="row items-gap align-items-center">
-                <div className="col-12 col-lg-3">
-                  <div
-                    className="logo text-center text-lg-start"
-                    id="footer_logo"
-                  >
-                    <Link href="/">
-                      <Image src={LogoTwo} alt="Image" />
-                      <span className="logo_name">RiskLab AI Library</span>
-                    </Link>
-                  </div>
-                </div>
+              <div className="row items-gap align-items-center justify-content-between">
                 <div className="col-12 col-lg-6">
-                  <p className="text-center">
+                  <p className="text-left">
                     Copyright &copy;
                     <span id="copyYear"> {currentYear} </span>
                     <span> Luis Seco, Hamid Arian</span>.
                   </p>
                 </div>
-                <div className="col-12 col-lg-3">
+                <div className="col-12 col-lg-6">
                   <div className="social justify-content-center justify-content-lg-end">
                     <Link href="/" aria-label="social media">
                       <i className="fa-brands fa-facebook-f"></i>
