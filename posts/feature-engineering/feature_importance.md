@@ -22,7 +22,7 @@ In machine learning, a "substitution effect" can dilute the importance of featur
     - Pros: Applicable to any classifier.
     - Cons: Computationally expensive, susceptible to substitution effects.
 
-<div style="text-align: center">
+<div style="text-align: center;">
 <img src="Figs/MDI_results.png" style="width:40%" alt="MDI results"/>
 </div>
 

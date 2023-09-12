@@ -2,6 +2,11 @@
  --------- (2.3) global styles start ---------
  ==== */
 
+@font-face {
+  font-family: Quantico;
+  src: url(../../../public/Quantico-Bold.ttf);
+}
+
 .my-app {
   overflow-x: clip !important;
 

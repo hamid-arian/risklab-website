@@ -1,0 +1,10 @@
+.reactMarkDown table {
+  margin: 10px 0;
+  outline: 1px solid rgba(220, 220, 220, 0.5);
+}
+.reactMarkDown th {
+  border: 1px solid rgba(220, 220, 220, 0.5);
+}
+.reactMarkDown tr:last-child > td {
+  padding-top: 10px !important;
+}
